@@ -16,12 +16,12 @@ html {
 
 /* SPECIFIC */
 #main {
-    height: 2000px;
+
 }
 
 #header {
-    height: 70px;
-    background-color: black;
+    height: 64px;
+    background-color: transparent;
     position: fixed;
     top: 0;
     left: 0;
@@ -30,7 +30,7 @@ html {
 }
 
 #header .header-logo .header-logo-img {
-    height: 70px;
+    height: 64px;
     display: inline-block;
     margin-left: 50%;
     transform: translateX(-50%);
@@ -86,6 +86,72 @@ html {
     color: rgba(255, 255, 255, 0.85);
     font-size: 6rem;
     letter-spacing: 0.6px;
+}
+
+#redirect {
+    width: 100vw;
+    height: 100vh;
+    background: url(./image/pexels-cottonbro-studio-5473337.png) top center / cover no-repeat;
+    padding: 14% 0 0;
+}
 
 
+#redirect .redirect-container {
+    width: 84%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#redirect .redirect-container .redirect-title {
+    font-style: italic;
+    font-size: 5rem;
+    text-align: center;
+    letter-spacing: 4px;
+    color: white;
+
+    margin-bottom: 8rem;
+
+}
+
+#redirect .redirect-container .redirect-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#redirect .redirect-link .fe-button {
+    background-color: rgb(208, 168, 92);
+    padding: 1.4rem 3rem 1.4rem;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 0.4px;
+    text-shadow: 0px 0px 2px #000000;
+    color: white;
+    border: none;
+}
+
+#redirect .redirect-link .fe-button:hover {
+    cursor: grab;
+    background-color: rgb(207, 177, 121);
+
+}
+
+#redirect .redirect-link .be-button {
+    background-color: rgb(11, 198, 227);
+    padding: 1.4rem 3rem 1.4rem;
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    color: white;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 0.4px;
+    text-shadow: 0px 0px 2px #292828;
+    border: none;
+}
+
+#redirect .redirect-link .be-button:hover {
+    background-color: rgb(97, 200, 216);
+    cursor: grab;
 }
