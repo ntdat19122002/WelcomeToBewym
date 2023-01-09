@@ -1,5 +1,91 @@
+/* COMMON */
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Anton', 'Roboto', sans-serif;
+}   
+
+
+/* SPECIFIC */
+#main {
+    height: 2000px;
+}
+
+#header {
+    height: 70px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#header .header-logo .header-logo-img {
+    height: 70px;
+    display: inline-block;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+#header .header-logo .header-logo-img:hover {
+    cursor: grab;
+}
+
+#banner {
+    position: relative;
+    /* margin-top: 70px; */
+    min-height: 100vh;
+    background: url(./image/pexels-pixabay-247791.jpg) top center / cover no-repeat;
+}
+
+#banner .banner-overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.9;
+}
+
+#banner .banner-context {
+    height: 100vh;
+    position: absolute;
+    padding: 5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#banner .banner-context .banner-heading {
+    font-family: 'Anton';
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 4rem;
+    letter-spacing: 0.6px;
+
+    transform: translateY(-50%);
+}
+
+#banner .banner-context .banner-logo-img {
+    width: 25%;
+}
+
+#banner .banner-context .banner-title {
+    font-family: 'Anton';
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 6rem;
+    letter-spacing: 0.6px;
+
+
 }
